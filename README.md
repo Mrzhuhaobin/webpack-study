@@ -9,3 +9,9 @@
 4. 使用webpack-dev-server，下载依赖后修改配置文件执行命令后报错：`Error: Cannot find module 'webpack-cli/bin/config-yargs'`；
 查阅资料是webpack3.x的版本与webpack-dev-server3.x 的版本不兼容,解决方案是卸载webpack-dev-server、webpack、webpack-cli后安装指定版本：
 `yarn add webpack@4.32.2 webpack-cli@3.3.2 webpack-dev-server@3.5.1 -D`
+
+## 一些插件
+1. UglifyJSPlugin: 删除未引用代码(dead code)；
+2. CleanWebpackPlugin： 运行后删除dist文件旧的内容；
+3. HtmlWebpackPlugin: 构建生成新的dist文件；
+4. webpack-dev-server：将代码部署到本地服务器；
