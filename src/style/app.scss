@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .hello {
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+        // background-image: url(../../assets/images/preview.jpg);
+        .icon-heart::before {
+            font-family: 'icomoon';
+            font-style: normal;
+            color: red;
+            content: "\e9da";
+        }
+    }
+}
