@@ -9,12 +9,12 @@ module.exports = {
     print: './src/print.js'
   },
   devtool: 'inline-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    compress: true,
-    port: 8000,
-    // host: '0.0.0.0'
-  },
+  // devServer: {
+  //   contentBase: path.join(__dirname, "dist"),
+  //   compress: true,
+  //   port: 8000,
+  //   // host: '0.0.0.0'
+  // },
   plugins: [
     new CleanWebpackPlugin({dist: 'dist'}),
     new HtmlWebpackPlugin({
@@ -23,7 +23,8 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   module: {
     rules: [
